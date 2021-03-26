@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<head>
+	<head>
 		<title>fixloven</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,10 +20,48 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	
-
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		
+		<!--== Javascript Files ==-->
+		
+			<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+			
+			<script src="js/jquery-2.1.0.min.js"></script>
+			
+			<script src="js/bootstrap.min.js"></script>
+			
+			<script src="js/jquery.scrollTo.js"></script>
+			
+			<script src="js/jquery.nav.js"></script>
+			
+			<script src="js/jquery.flexslider.js"></script>
+			
+			<script src="js/jquery.accordion.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/jquery.placeholder.js"></script>
+			
+			<script src="js/jquery.fitvids.js"></script>
+			
+			<script src="js/gmap3.js"></script>
+			
+			<script src="js/fancySelect.js"></script>
+			
+			<script src="js/owl.carousel.min.js"></script>
+			
+			<!-- <script src="js/main.js"></script> -->
+			
+			<script type="text/javascript"> 
+				$(document).ready(function() {		 
+				  $("#testimonial-container").owlCarousel({				 
+					  navigation : false, // Show next and prev buttons
+					  slideSpeed : 700,
+					  paginationSpeed : 400,
+					  singleItem:true,
+				  });		 
+				});
+			</script>
 	</head>
+	
 	<body>
 		<header id="header">
 			<div id="menu" class="header-menu fixed">
@@ -93,102 +131,101 @@
 				</div>
 			</div>
 		</header>
-
+		
+		
 		<div class="content">
 			<div class="container box">
-
-
-				<!--===============================-->
-				<!--== About us ===================-->
-				<!--===============================-->
-		<section id="about" class="about-us">
-			<div class="title-start col-md-4 col-md-offset-4">
-			<br />
-				<h2>About Us</h2>
-				<p class="sub-text text-center">FIXLOVEN WELLCOMES YOU</p>
-			</div>
-			<div class="container">
-			<div class="about-first">
-			<div class="block col-md-4">
-				<div class="content-block">
-					<i class="fa fa-users fa-3x"></i>
-					<h3>We</h3>
-					<p>fixloven events are specialised in weeding. it is no secret that a wedding day stands among the most important occasions a couple can experience in their lifetime, and we cherish the great honor and responsibility that comes along with this.With this in mind,our talented team works closely with prospective couples and their families to organize this momentous event to the finest detail, ultimately expressing the persional style and signature of the couple.</p>
-				</div>
-			</div>
-			<div class="block col-md-4">
-				<div class="content-block">
-					<i class="fa fa-rocket fa-3x"></i>
-					<h3>OUR VISION</h3>
-					<p>To be a market leader in event planning & management services, recognize its elemental objective by its clients, consumers and employees; win through the satisfaction of our clients by seeing a smile on their face.
-
-						we would be 24/7 available and can create elegance in terms of grandeur wedding planner . our goal is to compliment and exceed the vision of our clients. we aim to grow with the support and blessing of our clients and family</p>
-				</div>
-			</div>
-			<div class="block col-md-4">
-				<div class="content-block">
-					<i class="fa fa-trophy fa-3x"></i>
-					<h3>Note from CEO</h3>
-					<p>Fixloven creates extraordinary experiences based on a series of high-impact moments. Our meticulous team is attentive to the smallest detail, ensuring that every event unfolds on time and with in budget. Whether the event is domestic or national , our gifted designers can turn the blank canvas of any location into a fantasy world. Our production team is sensitive listeners , uniquely responsive to corporate needs. Together , working in partnership with our clients and vendors , we create events that forge unforgettable connections between guests and their host.</p>
-				</div>
-			</div>
-			</div>
-			<div class="about-part">
-			<div class="col-md-8">
 			
-				<h3>ABOUT US</h3>
+			<!------about us------>
+			
+			
+				<section id="about" class="about-us">
+					<div class="title-start col-md-4 col-md-offset-4">
+						<br />
+						</br />
+							<h2>About Us</h2>
+							<p class="sub-text text-center">FIXLOVEN WELLCOMES YOU</p>
+					</div>
+					<div class="container">
+						<div class="about-first">
+							<div class="block col-md-4">
+								<div class="content-block">
+									<i class="fa fa-users fa-3x"></i>
+									<h3>We</h3>
+									<p>fixloven events are specialised in weeding. it is no secret that a wedding day stands among the most important occasions a couple can experience in their lifetime, and we cherish the great honor and responsibility that comes along with this.With this in mind,our talented team works closely with prospective couples and their families to organize this momentous event to the finest detail, ultimately expressing the persional style and signature of the couple.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="block col-md-4">
+							<div class="content-block">
+								<i class="fa fa-rocket fa-3x"></i>
+								<h3>OUR VISION</h3>
+								<p>To be a market leader in event planning & management services, recognize its elemental objective by its clients, consumers and employees; win through the satisfaction of our clients by seeing a smile on their face.
+
+									we would be 24/7 available and can create elegance in terms of grandeur wedding planner . our goal is to compliment and exceed the vision of our clients. we aim to grow with the support and blessing of our clients and family</p>
+							</div>
+						</div>
+						<div class="block col-md-4">
+							<div class="content-block">
+								<i class="fa fa-trophy fa-3x"></i>
+								<h3>Note from CEO</h3>
+								<p>Fixloven creates extraordinary experiences based on a series of high-impact moments. Our meticulous team is attentive to the smallest detail, ensuring that every event unfolds on time and with in budget. Whether the event is domestic or national , our gifted designers can turn the blank canvas of any location into a fantasy world. Our production team is sensitive listeners , uniquely responsive to corporate needs. Together , working in partnership with our clients and vendors , we create events that forge unforgettable connections between guests and their host.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="about-part">
+						<div class="col-md-8">
+							<h3>ABOUT US</h3>
+							<p>fixloven is a complete house of event management and event planning. our services are available throughout the state of odisha and in some leading cities of our country.we customize event strategies to match our clients goals,budget and resources. we have consultants and strategic partners with expertise in all areas of event management and marketing,
+							mr.satish rout and mr.ashish lakra is the founder of FIXLOVEN events. always try to satisfy clients in terms of providing the best services in most affordable rates.</p>
+	
+						</div>
+						<div class="col-md-4">
+							<p>planning</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" 		style="width: 80%;">
+								80%
+								</div>
+							</div>
+								<br/>
+							<p> EXECUTION</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" 		style="width: 100%;">
+								100%
+								</div>
+							</div>
+						</div>
+							<br/>
+					</div>
+				</section>
 				
-
-				<p>fixloven is a complete house of event management and event planning. our services are available throughout the state of odisha and in some leading cities of our country.we customize event strategies to match our clients goals,budget and resources. we have consultants and strategic partners with expertise in all areas of event management and marketing,
-
-					mr.satish rout and mr.ashish lakra is the founder of FIXLOVEN events. always try to satisfy clients in terms of providing the best services in most affordable rates.</p>
-			</div>
-			<div class="col-md-4">
-
-				<p>planning</p>
-				<div class="progress">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-				    80%
-				  </div>
-				</div>
-				<br/>
-				<p> EXECUTION</p>
-				<div class="progress">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-				    100%
-				  </div>
-				</div>
-				<br/>
-			</div>
-			</div>
-			</div>
-		</section>
-				<!--==========-->
-
-
-
-				<!--===============================-->
-				<!--== Schedule ===================-->
-				<!--===============================-->
+				
+				<!------All we did------->
+				
 				<section id="ourwork" class="row">
-				<div class="title-start schedule-menu col-md-4 col-md-offset-4">
-				<br />
+					<div class="title-start schedule-menu col-md-4 col-md-offset-4">
+					<br />
 					<h2>All we DID</h2>
 					<p class="sub-text text-center">Check out what we have done</p>
-				</div>
+					</div>
+					
 					<ul class="timeline">
-					    <li>
-					        <div class="timeline-badge">
+						<li>
+							<div class="timeline-badge">
 					          <a><i class="fa fa-circle" id=""></i></a>
 					        </div>
-					        <div class="timeline-panel">
-					            <div class="timeline-heading">
+							
+							<div class="timeline-panel">
+								<div class="timeline-heading">
 					                <h4>Event One</h4>
 									<img class="blog-image" src="images/demo/blog4.jpg" width="100%" height="250" alt="Blog Image 2"/>
 									<img class="blog-image" src="images/demo/blog5.jpg" width="100%" height="250" alt="Blog Image 2"/>
 					            </div>
-					            <div class="timeline-body">
-					                <p class="timeline-desc col-md-6">it is no secret that a wedding day stands among the most important occasions a couple can experience in their lifetime, and we cherish the great honor and responsibility that comes along with this.</p>
+								
+								<div class="timeline-body">
+									<p class="timeline-desc col-md-6">it is no secret that a wedding day stands among the most important occasions a couple can experience in their lifetime, and we cherish the great honor and responsibility that comes along with this.</p>
 					                <p class="timeline-other col-md-6">
 					                	
 					                	<em class="timeline-item">
@@ -208,23 +245,22 @@
 					                	</em>
 
 					                </p>
-
-					            </div>
-					            
-					        </div>
-					    </li>
-					    
-					    <li  class="timeline-inverted">
-					        <div class="timeline-badge">
+								</div>
+							</div>
+						</li>
+						
+						<li  class="timeline-inverted">
+							<div class="timeline-badge">
 					          <a><i class="fa fa-circle" id=""></i></a>
 					        </div>
-					        <div class="timeline-panel">
-					            <div class="timeline-heading">
+							<div class="timeline-panel">
+								<div class="timeline-heading">
 					                <h4>Event Two</h4>
 									<img class="blog-image" src="images/demo/blog6.jpg" width="100%" height="250" alt="Blog Image 2"/>
 									<img class="blog-image" src="images/demo/blog7.jpg" width="100%" height="250" alt="Blog Image 2"/>
 					            </div>
-					            <div class="timeline-body">
+								
+								<div class="timeline-body">
 					                <p class="timeline-desc col-md-6">Birthdays and parties will come and go, but the pleasant memories will stay in our heart forever.</p>
 					                <p class="timeline-other col-md-6">
 					                	
@@ -247,349 +283,301 @@
 					                </p>
 
 					            </div>
-					            
-					        </div>
-					    </li>
-					    
-					    <li>
-					        
-
-					                </p>
-
-					            </div>
-					            
-					        </div>
-					    </li>
-					    <li class="clearfix no-float"></li>
+							</div>
+						</li>
 					</ul>
-					
 				</section>
+			</div>
+		</div>
+				
+			<!-------coreservice section-------->
 
-
-
-				<!--===============================-->
-				<!--== Blog =============-->
-				<!--===============================-->
-			<section id="Coreservices" class="row">
-				<div class="title-start col-md-4 col-md-offset-4"><h2>Core services</h2>	
-				<p class="sub-text text-center">WELL KNOWN FOR QUALITY SERVICES THOUGH THE BEST EXPERIENCED AND WELL PROFESSIONAL TEAM</p>	
-				</div>
+			
+				<section id="Coreservices" class="row">
+					<div class="title-start col-md-4 col-md-offset-4">
+						<div></div>
+						<div></div>
+						<div></div>
+						<br /><br />
+						<br /><br />
+						<h2>Core services</h2>	
+						<p class="sub-text text-center">WELL KNOWN FOR QUALITY SERVICES THOUGH THE BEST EXPERIENCED AND WELL PROFESSIONAL TEAM</p>	
+					</div>
 					<div class="top">
 					</div>
-					<div class="content">
-					  
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">WEDDING EVENT</h2>
-					    
-					    
-					    <img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
-					    
-					    <p class="firstpara"><span class="firstcharacter"></span>We design a heaven for you.
-
-							wedding planning is what we have started since this company was initiated so we believe that we are known and famous mainly because of our this service and by having wonerfull people to business with.We do include:
-							1* 		Lightening, Stage-floor and flower Decorations
-							2* 		Religious or latest Themes
-							3* 		Dj and Photo-Video Shooting
-							4* 		Delicious Food and Catering Services
-							5* 		Hotel and Room Services
-							6* 		medical emergency
-							7*                  Mendi function
-							8* 		Ring ceremon
-							9*                  Reception</p> 
-
-					    
-					  </div>
 					
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">BIRTHDAY PARTYS</h2>
-					    
-					    <img class="blog-image" src="images/demo/blog1.jpg"  width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter"></span>Birthdays and parties will come and go, but the pleasant memories will stay in our heart forever. Just like how a cake is incomplete without a candle and a gift is incomplete without wrapping paper,your parties are incomplete without FIXLOVEN.
-							1* 		Baloon decoration
-							2* 		Theme decoration
-							3* 		Cocktail & Mocktail Party
-							4* 		Snacks & Catering Arrangement
-							.</p>
-					    
-					  </div>
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">CORPORATE & SOCIAL EVENTS</h2>
+					<div class="content">
+						<div class="blog col-md-4">
+							<h2 class="blog-head">WEDDING EVENT</h2>
+								<img class="blog-image" src="images/demo/blog2.jpg" width="100%" height="250" alt="Blog Image 2"/>
+								<p class="firstpara"><span class="firstcharacter"></span>We design a heaven for you.
 
-					    
-					    <img class="blog-image" src="images/demo/blog3.jpg" width="100%" height="250" alt="Blog Image 2"/>
-					    <p class="firstpara"><span class="firstcharacter">P</span>You did what you know. We do it better.
+									wedding planning is what we have started since this company was initiated so we believe that we are known and famous mainly because of our this service and by having wonerfull people to business with.We do include:
+									1* 		Lightening, Stage-floor and flower Decorations
+									2* 		Religious or latest Themes
+									3* 		Dj and Photo-Video Shooting
+									4* 		Delicious Food and Catering Services
+									5* 		Hotel and Room Services
+									6* 		medical emergency
+									7*                  Mendi function
+									8* 		Ring ceremon
+									9*                  Reception</p> 
+						</div>
+						
+						<div class="blog col-md-4">
+							<h2 class="blog-head">BIRTHDAY PARTYS</h2>
+								<img class="blog-image" src="images/demo/blog1.jpg"  width="100%" height="250" alt="Blog Image 2"/>
+								<p class="firstpara"><span class="firstcharacter"></span>Birthdays and parties will come and go, but the pleasant memories will stay in our heart forever. Just like how a cake is incomplete without a candle and a gift is incomplete without wrapping paper,your parties are incomplete without FIXLOVEN.
+								1* 		Baloon decoration
+								2* 		Theme decoration
+								3* 		Cocktail & Mocktail Party
+								4* 		Snacks & Catering Arrangement
+								.</p>
+								
+						</div>
+						
+						<div class="blog col-md-4">
+							<h2 class="blog-head">CORPORATE & SOCIAL EVENTS</h2>
+								<img class="blog-image" src="images/demo/blog3.jpg" width="100%" height="250" alt="Blog Image 2"/>
+							<p class="firstpara"><span class="firstcharacter">P</span>You did what you know. We do it better.
 							FIXLOVEN goal is to motivate and inspire your people and showcase your company at its best , we’ll help you get the dynamics exactly right. We consider every aspect of your guests’ experience.
 							
 							-  Theme decoration
 							-  Conferences
 							-  Brand & Product Launch
 							-  Seminars.</p>
-					    
-
-						
+					    </div>
 					</div>
-				</section>
-				<div></div>
-				<!--==========-->
-				<!--===============================-->
-				<!--== booking Tables =============-->
-				<!--===============================-->
-				<section id="book" class="row">
-				<div class="title-start col-md-4 col-md-offset-4" style="margin-top:3px;"><h2>Booking</h2>	
-				<p class="sub-text text-center">Details of our reasonable services</p>	
-				</div>
-					<div class="top">
-					</div>
-					<div class="content">
-					  
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">WEDDING EVENT</h2>
-					    
-					    
-					    <p class="timeline-other col-md-12">					                	
-							<em class="timeline-item font-weight-bold">
-								Lightening-stage-floor- and flower decoration, religious or latest theme.
-							</em> 
-							<em class="timeline-item">
-								Pre-weddingshoot, DJ,wedding photo-video shoot.
-							</em>
-							<em class="timeline-item">
-								All Delicious food and catering services likes Chinese, Indian, American foods available.
-							</em>
-							<em class="timeline-item">
-								All in one package, Ring Ceremony, Mehndi, Sangeet.
-							</em>
-					    </p> 
-
-					    
-					  </div>
-					
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">SURPRISE EVENTS</h2>
-						
-						<p class="timeline-other col-md-12">					                	
-							<em class="timeline-item font-weight-bold">
-								Baloon/flower/light decoration - creative theme decoration - all type of Themes
-							</em> 
-							<em class="timeline-item">
-								Cocktail & Mocktail Party
-							</em>
-							<em class="timeline-item">
-								Snacks & Catering Arrangement
-							</em>
-							<em class="timeline-item">
-								Games,music
-							</em>
-					    </p> 
-					  </div>
-					  <div class="blog col-md-4">
-					    <h2 class="blog-head">SOCIAL OR CORPORATE EVENTS</h2>
-						
-						<p class="timeline-other col-md-12">					                	
-							<em class="timeline-item font-weight-bold">
-								Theme Decoration - Conferences
-							</em> 
-							<em class="timeline-item">
-								Brand & Product Launch
-							</em>
-							<em class="timeline-item">
-								Seminar or Small Party
-							</em>
-							<em class="timeline-item">
-								Catering Service and Delicious Food
-							</em>
-					    </p>
-					</div>
-				</section>
-				<!--==========-->
-
-				<!--==========-->
-				<!--===============================-->
-				<!--== Team =============-->
-				<!--===============================-->
 				
-				<section id="team" class="team"> 
+				</section>
+				
+			<!------- booking section----->	
+				
+				<section id="book" class="row">
+					<div class="title-start col-md-4 col-md-offset-4" style="margin-top:3px;">
+					
+					<br />
+					<br />
+						<h2>Booking</h2>	
+						<p class="sub-text text-center">Details of our reasonable services</p>	
+					</div>
+						<div class="top">
+						</div>
+					<div class="content">
+						<div class="blog col-md-4">
+							<h2 class="blog-head">WEDDING EVENT</h2>
+								<p class="timeline-other col-md-12">					                	
+									<em class="timeline-item font-weight-bold">
+										Lightening-stage-floor- and flower decoration, religious or latest theme.
+									</em> 
+									<em class="timeline-item">
+										Pre-weddingshoot, DJ,wedding photo-video shoot.
+									</em>
+									<em class="timeline-item">
+										All Delicious food and catering services likes Chinese, Indian, American foods available.
+									</em>
+									<em class="timeline-item">
+										All in one package, Ring Ceremony, Mehndi, Sangeet.
+									</em>
+								</p> 
+						</div>
+					
+					
+						<div class="blog col-md-4">
+							<h2 class="blog-head">SURPRISE EVENTS</h2>
+								<p class="timeline-other col-md-12">					                	
+									<em class="timeline-item font-weight-bold">
+										Baloon/flower/light decoration - creative theme decoration - all type of Themes
+									</em> 
+									<em class="timeline-item">
+										Cocktail & Mocktail Party
+									</em>
+									<em class="timeline-item">
+										Snacks & Catering Arrangement
+									</em>
+									<em class="timeline-item">
+										Games,music
+									</em>
+								</p> 
+						</div>
+					
+						<div class="blog col-md-4">
+							<h2 class="blog-head">SOCIAL OR CORPORATE EVENTS</h2>
+								<p class="timeline-other col-md-12">					                	
+									<em class="timeline-item font-weight-bold">
+										Theme Decoration - Conferences
+									</em> 
+									<em class="timeline-item">
+										Brand & Product Launch
+									</em>
+									<em class="timeline-item">
+										Seminar or Small Party
+									</em>
+									<em class="timeline-item">
+										Catering Service and Delicious Food
+									</em>
+								</p>
+						</div>
+					</div>
+				</section>
+				
+				<!-----our team section----->
+				
+				<section id="team" class="team">
 					<div class="container">
 						<div class="title-start team-menu col-md-4 col-md-offset-4">
+						<br />
 							<h2 class="team-heading" style="margin-top: 68px;">Our Team</h2>
 							<p class="sub-text text-center">Meet fixloven management head</p>
 						</div>
-					</div>
-					<div class="team-member row">
-					<div class="col-md-3 col-sm-6 member">
-						<img class="blog-image" src="images/team1.jpg" width="100%" height="280" alt="Blog Image 2"/>
-						<p class="name-member">Satish rout</p>
-					    <ul class="team-ist">
-					     <li>FOUNDER </li>	
-					     <li>CEO</li>
-					     <li>innovator</li>	
-						 <li>event coordinator</li>
-					     </ul>
-					</div>
-					<div class="col-md-9 col-sm-6 member">
+					</div>	
+						<div class="team-member row">
+							<div class="col-md-3 col-sm-6 member">
+								<img class="blog-image" src="images/team1.jpg" width="100%" height="280" alt="Blog Image 2"/>
+								<p class="name-member">Satish rout</p>
+								<ul class="team-ist">
+								 <li>FOUNDER </li>	
+								 <li>CEO</li>
+								 <li>innovator</li>	
+								 <li>event coordinator</li>
+								 </ul>
+							</div>
 						
-						<video width="100%" height="430" controls>
-						  <source src="video/fixloven.mp4" type="video/mp4">			  
-						</video>
-					
-					</div>
-					
-					
 						
-
+							<div class="col-md-9 col-sm-6 member">
+								<video width="100%" height="430" controls>
+								  <source src="video/fixloven.mp4" type="video/mp4">			  
+								</video>
+							</div>
+					</div>
 				</section>
-				</div></div>
-				<!--==========-->
-				<!--==========-->
-				<!--===============================-->
-				<!--== Testimonial =============-->
-				<!--===============================-->
-		<section id="testimonial" class="testimonial-area">
-            <div class="container">
-                <div class="title-start col-md-4 col-md-offset-4">
-					<h2 class="team-heading white">Testimonial</h2>
-					<p class="sub-text text-center">What they say and see among us</p>
+				
+				
+				
+			<!------testimonials section------->	
+				
+				<section id="testimonial" class="testimonial-area">
+					<div class="container">
+						<div class="title-start col-md-4 col-md-offset-4">
+						<br />
+							<h2 class="team-heading white">Testimonial</h2>
+							<p class="sub-text text-center">What they say and see among us</p>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+							</div>
+							<div id="testimonial-container" class="col-xs-12">
+								<div class="testimonila-block">
+									<img src="images/testimonial1.jpg" alt="clients" class="selfshot">
+									<p>If you are looking for a team that can handle the pressure and execute in a timely manner, I recommend FIXLOVEN. My family and I worked closely with satish/ashish and his team to ensure that our vision turned into reality, and we are truly grateful. ASWINI, the Bride.</p>
+									<strong>ASWINI</strong>
+									<br>
+									<small>the bride</small>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<div class="testimonila-block">
+								<img src="images/testimonial2.jpg" alt="clients" class="selfshot">
+								<p>“A DREAM WEDDING” where everything was PERFECTION!  Satish//ashish  and the entire team made sure of that by taking care of every little detail leaving us and our families to only relax and enjoy our beautiful wedding.
+									They are very professional yet so personal. All the meetings with satish//ashish and their team were so much fun and extremely helpful where we could discuss all minute details beforehand making things much easier while you get all set for the Big Day. Everything was much more gorgeous than what was discussed and planned. Their team makes you and your guests feel so special that each one still compliments us about our wonderful wedding. A big thank you to satish//asish and the entire crew who were very friendly enthusiastic, and taking care of the entire wedding and made our dream wedding come true. Chirag ,bridegroom</p>
+								<strong>CHIRAG</strong>
+								<br>
+								<small>Bridegroom</small>
+							</div>
+						</div>
+						
+						<div>
+							<div class="testimonila-block">
+								<img src="images/testimonial3.jpg" alt="clients" class="selfshot">
+								<p>Hello satish and FIXLOVEN TEAM, Thank you so much for your brilliant performance at  Akash’s birthday party yesterday. Akash and all the children were spellbound and had a wonderful time. Thanks a million and we wish you continued success in making happy memories for families.</p>
+								<strong>ADISH agarwal</strong>
+								<br>
+								<small>akash's father</small>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<div class="content mcontent">
+					<div id="gotop" class="gotop fa fa-arrow-up"></div>
 				</div>
-                <div class="row">
-                    <div class="col-xs-12">
-                    </div>
-                    <div id="testimonial-container" class="col-xs-12">
-                        <div class="testimonila-block">
-                            <img src="images/testimonial1.jpg" alt="clients" class="selfshot">
-                            <p>If you are looking for a team that can handle the pressure and execute in a timely manner, I recommend FIXLOVEN. My family and I worked closely with satish/ashish and his team to ensure that our vision turned into reality, and we are truly grateful. ASWINI, the Bride.</p>
-                            <strong>ASWINI</strong>
-                            <br>
-                            <small>the bride</small>
-                        </div>
-					</div>
-					<div>
-                        <div class="testimonila-block">
-                            <img src="images/testimonial2.jpg" alt="clients" class="selfshot">
-                            <p>“A DREAM WEDDING” where everything was PERFECTION!  Satish//ashish  and the entire team made sure of that by taking care of every little detail leaving us and our families to only relax and enjoy our beautiful wedding.
-								They are very professional yet so personal. All the meetings with satish//ashish and their team were so much fun and extremely helpful where we could discuss all minute details beforehand making things much easier while you get all set for the Big Day. Everything was much more gorgeous than what was discussed and planned. Their team makes you and your guests feel so special that each one still compliments us about our wonderful wedding. A big thank you to satish//asish and the entire crew who were very friendly enthusiastic, and taking care of the entire wedding and made our dream wedding come true. Chirag ,bridegroom</p>
-                            <strong>CHIRAG</strong>
-                            <br>
-                            <small>Bridegroom</small>
-                        </div>
-					</div>
-					<div>
-                        <div class="testimonila-block">
-                            <img src="images/testimonial3.jpg" alt="clients" class="selfshot">
-                            <p>Hello satish and FIXLOVEN TEAM, Thank you so much for your brilliant performance at  Akash’s birthday party yesterday. Akash and all the children were spellbound and had a wonderful time. Thanks a million and we wish you continued success in making happy memories for families.</p>
-                            <strong>ADISH agarwal</strong>
-                            <br>
-                            <small>akash's father</small>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- container -->
-        </section><!-- testimonial -->
 				
-        		<div class="content mcontent">
-				<div id="gotop" class="gotop fa fa-arrow-up"></div>
-			</div>
-		</div>
-		 <!-- Contact Area -->
+				<!-----contact---->
+				
+				<section id="contact" class="mapWrap">
+					<div id="googleMap" style="width:100%;"></div>
+					<div id="contact-area">
+						<div class="container">
+							<h2 class="block_title">Hey !!!</h2>
+							<div class="row">
+								<div class="col-xs-12">
+								</div>
+								<div class="col-sm-6">
+									<div class="moreDetails">
+										<h2 class="con-title">More About us</h2>
+										<p> we are fixloven, memorable events don’t just happen. they happen to be our business. </p>
+										<ul class="address">
+											<li><i class="pe-7s-map-marker"></i><span>thank u,<br>for visiting us,<br>love from heart</span></li>
+											<li><i class="pe-7s-mail"></i><span>myofficehunter@gmail.com</span></li>
+											<li><i class="pe-7s-phone"></i><span>8249 404 030//6371 391 718</span></li>
+											<li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="col-sm-6">
+									<h2 class="con-title">Contact us</h2>
+										<form role="form">
+										  <div class="form-group">
+												<input type="text" class="form-control" id="user_name" placeholder="Enter your name">
+										  </div>
+										  <div class="form-group">
+												<input type="email" class="form-control" id="your_email" placeholder="Enter your email">
+										  </div>
+										  <div class="form-group">
+												<textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
+										  </div>
 
-        <section id="contact" class="mapWrap">
-            <div id="googleMap" style="width:100%;"></div>
-            <div id="contact-area">
-                <div class="container">
-                    <h2 class="block_title">Hey !!!</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="moreDetails">
-                                <h2 class="con-title">More About us</h2>
-                                <p> we are fixloven, memorable events don’t just happen. they happen to be our business. </p>
-                                <ul class="address">
-                                    <li><i class="pe-7s-map-marker"></i><span>thank u,<br>for visiting us,<br>love from heart</span></li>
-                                    <li><i class="pe-7s-mail"></i><span>myofficehunter@gmail.com</span></li>
-                                    <li><i class="pe-7s-phone"></i><span>8249 404 030//6371 391 718</span></li>
-                                    <li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h2 class="con-title">Contact us</h2>
-                            <form role="form">
-                              <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
-                              </div>
-                              <div class="form-group">
-                                <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
-                              </div>
-                              <div class="form-group">
-                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
-                              </div>
-
-                              <button type="submit" class="btn medium">Let us know</button>
-                            </form>   
-                        </div>
-                    </div>
-                </div><!-- container -->
-            </div><!-- contact-area -->
-            <div id="social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="scoialinks">
-                                <li class="normal-txt">Find us on</li>
-                                <li class="social-icons"><a class="facebook" href="https://www.facebook.com/fix.loven.7" target="_blank"></a></li>
-                                
-                                <li class="social-icons"><a class="google-plus" href="https://www.instagram.com/fixloven.pvt.ltd/?igshid=1ap7q4gkw9bac" target="_blank"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- social -->
-        </section><!-- contact -->
-		<footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p class="copyright">© Copyright 2021 <a href="http://wwww.technextit.com" target="_blank">google</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="designed">Designed and Developed by <a href="http://themewagon.com" target="_blank">google</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-		<!--== Javascript Files ==-->
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<script src="js/jquery-2.1.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.scrollTo.js"></script>
-		<script src="js/jquery.nav.js"></script>
-		<script src="js/jquery.flexslider.js"></script>
-		<script src="js/jquery.accordion.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/jquery.fitvids.js"></script>
-		<script src="js/gmap3.js"></script>
-		<script src="js/fancySelect.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/main.js"></script>
-		<script type="text/javascript"> 
-
-		$(document).ready(function() {
- 
-		  $("#testimonial-container").owlCarousel({
-		 
-		      navigation : false, // Show next and prev buttons
-		      slideSpeed : 700,
-		      paginationSpeed : 400,
-		      singleItem:true,
-		  });
- 
-		});
+											<button type="submit" class="btn medium">Let us know</button>
+										</form>   
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="social">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<ul class="scoialinks">
+										<li class="normal-txt">Find us on</li>
+										<li class="social-icons"><a class="facebook" href="https://www.facebook.com/fix.loven.7" target="_blank"></a></li>
+										
+										<li class="social-icons"><a class="google-plus" href="https://www.instagram.com/fixloven.pvt.ltd/?igshid=1ap7q4gkw9bac" target="_blank"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<footer>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<p class="copyright">© Copyright 2021 <a href="http://wwww.technextit.com" target="_blank">google</a></p>
+							</div>
+							<div class="col-sm-6">
+								<p class="designed">Designed and Developed by <a href="http://themewagon.com" target="_blank">google</a></p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			
 		
-		 
-				
-    
-		</script>
 	</body>
 </html>
+	
+	

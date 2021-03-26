@@ -13,7 +13,7 @@
             fn.MenuSticky();
             fn.MainSlider();
             fn.MainSliderAlign();
-            fn.Navigation();
+            //fn.Navigation();
             fn.Carousel();
             fn.Slider();
             fn.Apps();

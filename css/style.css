@@ -235,7 +235,7 @@ input[type='submit']:active {
 }
 
 .header-menu {
-  position: absolute;
+  position: fixed !important;
     width: 100%;
     z-index: 55;
 }

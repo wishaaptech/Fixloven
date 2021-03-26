@@ -15,7 +15,7 @@
 		<link href="css/flexslider.css" rel="stylesheet" media="screen">
 		<link href="css/fancySelect.css" rel="stylesheet" media="screen">
 		<link href="css/responsive.css" rel="stylesheet" media="screen">
-
+	
 		<!--== Google Fonts ==-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		
 		<!--== Javascript Files ==-->
-		
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 			
 			<script src="js/jquery-2.1.0.min.js"></script>
@@ -63,7 +63,25 @@
 				function hideHeaer() {
 				  $('.navbar-collapse').collapse('hide');
 				}
-					//
+			
+				function sendEmail() {
+					var name = document.getElementById("user_name").value;
+					var emailID = document.getElementById("your_email").value;
+					var phoneNum = document.getElementById("phone").value;
+					var desc = document.getElementById("user_message").value;
+					Email.send({
+						Host: "smtp.gmail.com",
+						Username: "wishappservice@gmail.com",
+						Password: "wishapp@6089",
+						To: 'myofficehunter@gmail.com',
+						From: "wishappservice@gmail.com",
+						Subject: "Fixloven Mail",
+						Body : "<html><style></style><table cellspacing=”0” cellpadding=”0” width=”640” align=”center” border=”1”><thead><tr ><th>Client Name</th> <th>Email </th><th>Mobile Number</th><th>Description</th></tr></thead><tbody><tr><td>"+name+"</td><td>"+emailID+"</td><td>"+phoneNum+"</td><td>"+desc+"</td></tr></table></html>",
+					 })
+					.then(function (message) {
+						alert("Message sent successfully")
+					});
+				}
 				
 			</script>
 	</head>
@@ -543,10 +561,13 @@
 												<input type="email" class="form-control" id="your_email" placeholder="Enter your email">
 										  </div>
 										  <div class="form-group">
+												<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your mobile number">
+										  </div>
+										  <div class="form-group">
 												<textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
 										  </div>
 
-											<button type="submit" class="btn medium">Let us know</button>
+											<button type="submit" class="btn medium" onclick="sendEmail()">Let us know</button>
 										</form>   
 								</div>
 							</div>
